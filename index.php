@@ -36,9 +36,9 @@
 		  </thead>
 		  <tbody>
 		    
-		    
+		  
 
-		    <?php include('table.php'); ?>
+		    <?php include('common/table.php'); ?>
 		    
 		  </tbody>
 		</table>
