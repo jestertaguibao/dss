@@ -36,19 +36,19 @@
 
 		      <!-- UPDATE -->
 		      <td>
-		      	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".<?php echo $row["id"]; ?>-modal-lg">EDIT</button>
+		      	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".<?php echo $row["id"]; ?>-modal-lg"><i class="fa fa-pencil" aria-hidden="true"></i></button>
 
 					<div class="modal fade <?php echo $row["id"]; ?>-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 					  <div class="modal-dialog modal-lg">
 					    <div class="modal-content">
 						    <!-- forms -->
 							
-						    	<div class="alert alert-info" role="alert"><h3>Add new data</h3></div>
+						    	<div class="alert alert-info" role="alert"><h3>Edit data</h3></div>
 								<center>  
 								<div class="row">
 								  <div class="col-md-8 col-md-offset-2">
-								    <form action="insert.php" method="post" role='form' id="contact-form">        
-
+								    <form action="update.php" method="post" role='form' id="contact-form">        
+								    	
 								        <label for="email" class="control-label" >Email</label>
 								        <input type="email" class="form-control" placeholder="Email" name="email" id="email" value="<?php echo $row["email"]; ?>" required>
 								        <br>
@@ -62,7 +62,7 @@
 								        <textarea class="form-control" rows="3" name="address"><?php echo $row["address"]; ?></textarea>
 								    
 								        <div class="form-group">  
-								        <button type="submit" class="btn btn-success">Add</button>
+								        <button type="submit" class="btn btn-success" name="submit" value="<?php echo $row["id"]; ?>">Save</button>
 								        </div>
 								        <button type="reset" class="btn">Reset</button>
 								        
