@@ -18,6 +18,14 @@
 		       test
 		      </a>
 		    </div>
+				<!-- SEARCH -->
+				<form class="navbar-form navbar-left" role="search" action="index.php" method="get">
+					
+					<input type="text" class="form-control" placeholder="Search" name="search" id="search">
+					<button type="submit" class="btn btn-success">Search</button>
+					<br>
+				</form>
+				<!-- SEARCH -->
 		  </div>
 		</nav>
 		<!-- navbar -->

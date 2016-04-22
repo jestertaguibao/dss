@@ -1,11 +1,3 @@
-<form action="index.php" method="get">
-<label>SEARCH</label>
-<input type="text" class="form-control" placeholder="Text input" name="search" id="search">
-<button type="submit" class="btn btn-success">Search</button>
-<br>
-</form>
-
-
 <?php
 	$search='';
 	if (isset($_GET['search'])){
