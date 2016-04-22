@@ -11,13 +11,13 @@
         <input type="email" class="form-control" placeholder="Email" name="email" id="email" required>
         <br>
         <label>Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+        <input type="text" class="form-control" id="password" name="password" placeholder="Password" required>
         <br>
         <label>Name</label>
         <input type="text" class="form-control" placeholder="Text input" name="name" id="name" required>
         <br>
         <label>Address</label>
-        <textarea class="form-control" rows="3"></textarea>
+        <textarea class="form-control" rows="3" name="address"></textarea>
       
       
         <div class="form-group">  
