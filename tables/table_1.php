@@ -1,5 +1,18 @@
-<?php 
-	$sql = "SELECT * FROM user ORDER BY id DESC";
+<form action="index.php" method="get">
+<label>SEARCH</label>
+<input type="text" class="form-control" placeholder="Text input" name="search" id="search">
+<button type="submit" class="btn btn-success">Search</button>
+<br>
+</form>
+
+
+<?php
+	$search='';
+	if (isset($_GET['search'])){
+	$search = $_GET['search'];
+	}
+	
+	$sql = "SELECT * FROM user WHERE name LIKE '$search%' ORDER BY id DESC";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
@@ -48,7 +61,7 @@
 								<div class="row">
 								  <div class="col-md-8 col-md-offset-2">
 								    <form action="update.php" method="post" role='form' id="contact-form">        
-								    	
+
 								        <label for="email" class="control-label" >Email</label>
 								        <input type="email" class="form-control" placeholder="Email" name="email" id="email" value="<?php echo $row["email"]; ?>" required>
 								        <br>
