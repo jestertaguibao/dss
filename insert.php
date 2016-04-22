@@ -2,7 +2,7 @@
   if (isset($_POST['email'])){
 
   $email = $_POST['email'];
-  $pass = "Test";
+  $pass = $_POST['password'];
   $name = $_POST['name'];
   $address = $_POST['address'];
 
