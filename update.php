@@ -8,7 +8,7 @@ if (isset($_POST['submit'])){
   $id = $_POST['submit'];
 include('common/db_connect.php');
 
-$sql = "UPDATE user SET email='$email', name='$name', password='$address', address='$address' WHERE id=$id";
+$sql = "UPDATE user SET email='$email', name='$name', password='$pass', address='$address' WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
