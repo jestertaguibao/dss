@@ -1,5 +1,4 @@
 
-
 <div class="alert alert-info" role="alert"><h3>Add new data</h3></div>
 <center>  
 <div class="row">

@@ -1,7 +1,7 @@
 <?php
 	$search='';
-	if (isset($_GET['search'])){
-	$search = $_GET['search'];
+	if (isset($_POST['search'])){
+	$search = $_POST['search'];
 	}
 	
 	$sql = "SELECT * FROM user WHERE name LIKE '$search%' ORDER BY id DESC";
@@ -19,8 +19,7 @@
 		      <td><?php echo $row["address"]; ?></td>
 		 
 		      <!-- DELETE -->
-		      <td>
-		      	
+		      <td>		      	
 		      	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".<?php echo $row["id"]; ?>"><i class="fa fa-trash" aria-hidden="true"></i></button>
 
 					<div class="modal fade <?php echo $row["id"]; ?>" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -34,10 +33,8 @@
 					    </div>
 					  </div>
 					</div>
-
 		      </td>
 		      <!-- DELETE -->
-
 
 		      <!-- UPDATE -->
 		      <td>

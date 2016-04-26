@@ -1,7 +1,12 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>CRUD</title>
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -19,7 +24,7 @@
 		      </a>
 		    </div>
 				<!-- SEARCH -->
-				<form class="navbar-form navbar-left" role="search" action="index.php" method="get">
+				<form class="navbar-form navbar-left" role="search" action="index.php" method="post">
 					
 					<input type="text" class="form-control" placeholder="Search" name="search" id="search">
 					<button type="submit" class="btn btn-success">Search</button>
